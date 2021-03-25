@@ -81,6 +81,93 @@
 }
 
 
+
+/* PRODUCT DETAILS PAGE*/
+
+.prduct{
+    display: grid;
+    grid-template-columns: 1fr 5fr 4fr;
+}
+
+.details{
+    text-align: left;
+}
+
+.pdt-item{
+    width: 60px;
+    height: 70px;
+    border: 1px solid red;
+}
+
+.item-det{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 1px solid green;
+}
+
+.checked{
+    color: orange;
+}
+
+.item-color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#item-white{
+    background-color: grey;
+}
+
+#item-blue{
+    background-color: blue;
+}
+
+#item-red{
+    background-color: red;
+}
+
+#item-black{
+    background-color: black;
+}
+
+.item-size{
+    cursor: pointer;
+    background: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.item-size:hover{
+    background: rgb(175, 175, 209);
+}
+
+.item-size:focus{
+    background: rgb(175, 175, 209);
+}
+
+#item-dec, #item-inc{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(29, 41, 80);
+    border: 1px solid rgb(29, 41, 80);
+    font-weight: bold;
+}
+
+#item-nbr{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(29, 41, 80);
+    background-color: white;
+}
+
 /* NAV BAR MEDIA QUERIES */
 /*@media (max-width: 952px){
     label.logo{

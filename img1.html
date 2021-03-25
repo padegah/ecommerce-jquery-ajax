@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>IMG1</title>
 </head>
 <body>
@@ -39,8 +40,46 @@
             </button>
         </div>
         <div class="product">
-            <div class="item"> 
+            <div class="pdt-items">
+                <div class="pdt-item"></div><br>
+                <div class="pdt-item"></div><br>
+                <div class="pdt-item"></div>
+            </div>
+            <div class="item-det"> 
                 <a href="img1.html"><img id="pdt" src="" alt=""></a>
+            </div>
+            <div class="details">
+                <div id="description"></div>
+                <div id="price"></div>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span>4 reviews</span>
+                </div>
+                <div>Color</div>
+                <div class="colors">
+                    <button type="submit" class="item-color" id="item-white" onclick="getColor();"></button>
+                    <button type="submit" class="item-color" id="item-red" onclick="getColor();"></button>
+                    <button type="submit" class="item-color" id="item-blue" onclick="getColor();"></button>
+                    <button type="submit" class="item-color" id="item-black" onclick="getColor();"></button>
+                </div>
+                <div>Size</div>
+                <div class="sizes">
+                    <button type="submit" class="item-size" id="item-small" onclick="getSize();">Small</button>
+                    <button type="submit" class="item-size" id="item-med" onclick="getSize();">Medium</button>
+                    <button type="submit" class="item-size" id="item-large" onclick="getSize();">Large</button>
+                    <button type="submit" class="item-size" id="item-xlarge" onclick="getSize();">Extra Large</button>
+                </div>
+                <div>Quantity</div>
+                <div class="qty">
+                    <button type="submit" class="item-qty" id="item-dec" onclick="decSize();">-</button>
+                    <button type="submit" class="item-qty" id="item-nbr">1</button>
+                    <button type="submit" class="item-qty" id="item-inc" onclick="incSize();">+</button>
+                </div>
+                <div>ADD TO CART</div>
             </div>
         </div>
     </div>
