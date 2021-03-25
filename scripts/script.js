@@ -68,16 +68,16 @@ document.getElementById('price').innerHTML = window.localStorage.getItem('pdt1-p
 Functions for counter
 */
 
-var click = Number(document.getElementById('item-nbr').innerText)
-var minimum = 1;
 
 function decSize()
 {
+    var minimum = 1;
+    var click = Number(document.getElementById('item-nbr').innerText);
     click -= 1;
     if(click < 1)
     {
         click = minimum;
-        return document.getElementById('item-nbr').innerText = minmum;
+        return document.getElementById('item-nbr').innerText = click;
     }
     
     document.getElementById('item-nbr').innerText = click;
@@ -85,6 +85,7 @@ function decSize()
 
 function incSize()
 {
+    var click = Number(document.getElementById('item-nbr').innerText);
     click += 1;
     document.getElementById('item-nbr').innerText = click;
 }
